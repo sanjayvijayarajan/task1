@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form class="signup-form">
+            <h2>Sign up</h2>
+            <div class="input-group">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="input-group">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group gender-group">
+                <label>Gender</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="input-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="United States">United States</option>
+                    <!-- Add other countries as needed -->
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="password">Create password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="repeat-password">Repeat password</label>
+                <input type="password" id="repeat-password" name="repeat-password" required>
+            </div>
+            <div class="input-group terms-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree with <a href="#">terms and conditions</a></label>
+            </div>
+            <button type="submit">Register</button>
+            <p>Have an account? <a href="#">Log In</a></p>
+        </form>
+    </div>
+</body>
+</html>
